@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  kobold:
+    build:
+      context: .
+      dockerfile: Dockerfile_Kobold.Dockerfile
+    container_name: kobold_container
+    ports:
+      - "5001:5001"
+    command: ["./start_kobold.sh"]
+
+  coqui:
+    build:
+      context: .
+      dockerfile: Dockerfile_Coqui.Dockerfile
+    container_name: coqui_container
+    ports:
+      - "5002:5002"
+    command: ["./start_coqui.sh"]
+    # Add environment variables or volumes if needed for proper functioning
+
+  whisper:
+    build:
+      context: .
+      dockerfile: Dockerfile_Whisper.Dockerfile
+    container_name: whisper_container
+    ports:
+      - "8080:8080"
+    command: ["./start_whisper.sh"]
