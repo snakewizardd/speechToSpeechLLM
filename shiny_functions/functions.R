@@ -184,7 +184,7 @@ greeting <- function(init_prompt,userFirstMessage,maxLengthInput){
   #process_text_to_audio_and_save(input_text=apiFirstOutput,output_file = './greeting.wav')
   
   text <- apiFirstOutput
-  speaker_id <- "p301"
+  speaker_id <- "p293"
   tts_url <- generate_tts_url(text, speaker_id)
   
   response <- GET(tts_url)

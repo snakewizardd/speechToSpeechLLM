@@ -9,6 +9,25 @@ library(readr)
 library(tuneR)
 library(stringr)
 
+
+#The following is a command line only representation
+# greeting(init_prompt = read_file('./prompts/try.txt'), userFirstMessage= "
+#           
+#           Hello, good morning bro.
+#           ", maxLengthInput= 75)
+# 
+# 
+# 
+# 
+# chatWithAI(currentMessage = "Tell me a joke about Docker",
+#            maxLengthInput = 210)
+# 
+# 
+
+
+
+renderFullConvoSpeech()
+
 conversation_history <- c()
 
 
@@ -67,7 +86,7 @@ server <- function(input, output, session) {
         
       } else if (currentRecording == "test.wav") {
         api_response <- process_recorded_message(desiredLength = input$responseLength,
-                                                 voiceID = "p301")
+                                                 voiceID = "p293")
         
         renderResponse <- read_file('./currentResponse.txt')
         renderResponse <- as.character(renderResponse)
