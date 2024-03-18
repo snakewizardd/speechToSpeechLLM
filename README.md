@@ -26,3 +26,7 @@ Initial Greeting speech input
 
 Follow up Message speech input
 ![image](https://github.com/snakewizardd/speechToSpeechLLM/assets/83378208/7192a650-6b2f-457f-b39b-1edc613f8e4f)
+
+___
+
+NOTE: The only part of this build that seems to need a bit of troubleshooting is the Coqui image. if you have any latency issues when installing, feel free to use the build_coqui.sh script on its own to isolate the build. Hopefully we can fix this in a future build. Once you get the image built with the English model it should run no problem
