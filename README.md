@@ -1,3 +1,10 @@
+# speechToSpeechLLM
+
+A free, open-source implementation of Speech-to-Speech technology
+
+![image](https://github.com/snakewizardd/speechToSpeechLLM/assets/83378208/107628e8-083f-4b40-b1b0-84ee014c9e4d)
+
+
 To run the composite backend of
 - Kobold CPP (NeuralBeagle 7B) on port 5001
 - Coqui TTS on port 5002
